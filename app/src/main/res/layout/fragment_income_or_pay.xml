@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xqq.fm.account.view.IncomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_account_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_default_selecter"
+            android:onClick="click"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="金 额" />
+
+            <TextView
+                android:id="@+id/tv_account_money"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="1"
+                android:text="0.00"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bbb"
+            android:onClick="click" />
+
+        <LinearLayout
+            android:id="@+id/ll_account_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:background="@drawable/linearlayout_default_selecter"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="类 别" />
+
+            <!--类别选择-->
+            <TextView
+                android:id="@+id/tv_account_category"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bbb" />
+
+        <LinearLayout
+            android:id="@+id/ll_account_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_default_selecter"
+            android:onClick="click"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="账 户" />
+
+            <!--账户选择-->
+            <TextView
+                android:id="@+id/tv_account_account"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bbb" />
+
+        <LinearLayout
+            android:id="@+id/ll_account_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_default_selecter"
+            android:onClick="click"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日 期" />
+
+            <!--点击弹出自定义日期选择框 默认是当前时间，精确到天-->
+            <TextView
+                android:id="@+id/tv_account_date"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bbb" />
+
+        <EditText
+            android:id="@+id/et_account_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:textSize="16sp"
+            android:focusable="false"
+            android:hint="备注信息..."
+            android:textColorHint="@color/colorAccent" />
+
+    </LinearLayout>
+
+</FrameLayout>

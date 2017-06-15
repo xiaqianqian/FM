@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:state_pressed="false">
+        <shape android:shape="rectangle">
+
+            <!--shape="rectangle"时使用-->
+            <corners android:radius="@dimen/button_radius" />
+
+            <!--渐变-->
+            <gradient />
+
+            <!--填充颜色-->
+            <solid android:color="#fff" />
+
+            <!--指定边框-->
+            <stroke
+                android:width="@dimen/button_stroke_width"
+                android:color="@color/colorAccent"/>
+
+            <!--内容与边框的距离-->
+            <padding />
+
+        </shape>
+    </item>
+
+    <item
+        android:state_pressed="true">
+        <shape android:shape="rectangle">
+
+            <!--shape="rectangle"时使用-->
+            <corners android:radius="@dimen/button_radius" />
+
+            <!--填充颜色-->
+            <solid android:color="#aaa" />
+
+            <!--指定边框-->
+            <stroke
+                android:width="@dimen/button_stroke_width"
+                android:color="@color/colorAccent"/>
+        </shape>
+    </item>
+
+</selector>

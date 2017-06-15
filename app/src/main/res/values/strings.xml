@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">个人财务管理</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_daily_fragment">Hello Daily fragment</string>
+
+    <string name="hello_analysis_fragment">Hello Analysis fragment</string>
+
+    <string name="hello_budget_fragment">Hello Budget fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_alarm_account_fragment">Hello Alarm Account fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_setting_fragment">Hello Setting fragment</string>
+    <string name="hello_data_management_fragment">Hello Data Management fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="title_daily">记一笔</string>
+    <string name="title_alarm_account">记账提醒</string>
+    <string name="title_analysis">统计分析</string>
+    <string name="title_transfer">转账分析</string>
+    <string name="title_data_management">数据管理</string>
+    <string name="title_setting">设置</string>
+    <string name="title_account">记账</string>
+    <string name="title_login">登录</string>
+    <string name="title_register">注册</string>
+    <string name="title_pay_category">分类管理</string>
+    <string name="title_add_card">添加账户</string>
+    <string name="title_select_date">选择日期</string>
+    <string name="title_budget_setting">设置预算</string>
+
+    <string name="btn_account_add_bill_again">再记一笔</string>
+    <string name="btn_account_save_bill">保存</string>
+
+</resources>

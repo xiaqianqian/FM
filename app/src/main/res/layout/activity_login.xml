@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_password_again"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
+            android:background="@color/colorAccent"
+            android:onClick="click"
+            android:text="登  录"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/et_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="请输入手机号码"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_userName"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:hint="请设置密码"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="false"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/et_password_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_password"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:hint="请再输入一次"
+            android:inputType="textPassword"
+            android:lines="1" />
+    </RelativeLayout>
+
+</LinearLayout>

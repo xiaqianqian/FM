@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="10dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="开启预算"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:paddingRight="10dp">
+
+            <Switch
+                android:id="@+id/switch_budget_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="关闭预算设置后，首页将显示收支差额信息" />
+
+    <LinearLayout
+        android:id="@+id/ll_budget_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="设置预算金额"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_budget_money"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@null"
+            android:lines="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
